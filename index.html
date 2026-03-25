@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vaishnav N — Data Scientist</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Syne:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Particle Canvas Background -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- Grid overlay -->
+<div class="grid-overlay"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-bracket">[</span>VN<span class="logo-bracket">]</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-status">
+    <span class="status-dot"></span>
+    <span class="status-text">Available for hire</span>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-tag"><span class="tag-dot"></span> AI / Data Science</div>
+      <h1 class="hero-name">
+        <span class="line1">VAISHNAV</span>
+        <span class="line2">N</span>
+      </h1>
+      <div class="hero-title-wrap">
+        <span class="title-prefix">&gt;&gt;</span>
+        <span class="hero-typed" id="typed-title"></span>
+        <span class="cursor-blink">_</span>
+      </div>
+      <p class="hero-desc">
+        Aspiring Data Scientist crafting intelligent systems from raw data. 
+        Specializing in ML, NLP & Deep Learning — turning complex datasets into 
+        data-driven stories that matter.
+      </p>
+      <div class="hero-cta-row">
+        <a href="#projects" class="btn-primary"><i class="fas fa-rocket"></i> Projects</a>
+        <a href="#blog" class="btn-ghost"><i class="fas fa-pen-nib"></i> Blog</a>
+        <a href="assets/Vaishnav_CV.pdf" class="btn-ghost" target="_blank"><i class="fas fa-file-alt"></i> Resume</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Vaishnav17-2004" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/vaishnav-n" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:vaishnavvichu216@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="profile-orbit">
+        <div class="orbit-ring ring1"></div>
+        <div class="orbit-ring ring2"></div>
+        <div class="orbit-ring ring3"></div>
+        <div class="orbit-dot dot1"></div>
+        <div class="orbit-dot dot2"></div>
+        <div class="orbit-dot dot3"></div>
+        <div class="profile-frame">
+          <!-- Replace src with your actual photo path: images/profile.jpg -->
+          <img src="images/profile.jpg" alt="Vaishnav N" class="profile-img" onerror="this.style.display='none'; this.parentElement.querySelector('.profile-placeholder').style.display='flex';">
+          <div class="profile-placeholder">
+            <i class="fas fa-user"></i>
+            <span>Add profile.jpg<br>to images/ folder</span>
+          </div>
+          <div class="profile-glow"></div>
+        </div>
+        <div class="floating-badge badge1"><i class="fas fa-brain"></i> ML</div>
+        <div class="floating-badge badge2"><i class="fas fa-code"></i> Python</div>
+        <div class="floating-badge badge3"><i class="fas fa-comments"></i> NLP</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="section-header">
+    <span class="section-num">01</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-left">
+      <div class="about-label">[ WHO I AM ]</div>
+      <p class="about-text">
+        I'm <strong>Vaishnav N</strong>, an enthusiastic and driven aspiring Data Scientist from Kannur, Kerala,
+        currently pursuing a specialized Diploma in Data Science. I thrive on transforming raw, messy data
+        into clean, actionable insights that power real-world decisions.
+      </p>
+      <p class="about-text">
+        My toolkit spans Python, Pandas, NumPy, and Seaborn for data wrangling and visualization, 
+        alongside Machine Learning and Deep Learning frameworks for building predictive models. 
+        I've explored Natural Language Processing and Computer Vision using OpenCV, 
+        working on projects ranging from emotion detection to credit risk analysis.
+      </p>
+      <p class="about-text">
+        Beyond code, I'm a quick learner with strong communication skills who loves 
+        collaborating in teams and tackling challenges head-on. My commerce background 
+        gives me a unique edge — understanding both business context and data-driven solutions. 
+        I'm eager to grow, contribute, and eventually shape the future of AI.
+      </p>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+        <div class="stat"><span class="stat-num">8+</span><span class="stat-label">Technologies</span></div>
+        <div class="stat"><span class="stat-num">2+</span><span class="stat-label">Years Learning</span></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="timeline-block">
+        <div class="timeline-section-label">Education</div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <div class="tl-date">Jun 2025 — Ongoing</div>
+            <div class="tl-title">Diploma in Data Science</div>
+            <div class="tl-place">Edure</div>
+            <div class="tl-desc">Python · ML · NLP · Deep Learning · OpenCV</div>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <div class="tl-date">Sep 2022 — Apr 2025</div>
+            <div class="tl-title">B.Com Co-operation</div>
+            <div class="tl-place">Kannur University</div>
+            <div class="tl-desc">Commerce · Accounting · Business Analytics</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-block">
+        <div class="timeline-section-label">Experience</div>
+        <div class="timeline-item">
+          <div class="tl-dot active"></div>
+          <div class="tl-content">
+            <div class="tl-date">2024 — Present</div>
+            <div class="tl-title">Independent Data Projects</div>
+            <div class="tl-place">Self-Directed / GitHub</div>
+            <div class="tl-desc">Built 10+ ML & NLP projects published on GitHub covering real-world datasets</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects">
+  <div class="section-header">
+    <span class="section-num">02</span>
+    <h2 class="section-title">Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-filter">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="ml">Machine Learning</button>
+    <button class="filter-btn" data-filter="nlp">NLP</button>
+    <button class="filter-btn" data-filter="viz">Data Viz</button>
+    <button class="filter-btn" data-filter="other">Other</button>
+  </div>
+  <div class="projects-grid" id="projects-grid">
+
+    <div class="project-card" data-category="nlp">
+      <div class="card-num">01</div>
+      <div class="card-icon"><i class="fab fa-twitter"></i></div>
+      <h3 class="card-title">Twitter Sentiment Analysis</h3>
+      <p class="card-desc">NLP-based model classifying tweets as positive, negative, or neutral. Applies text preprocessing and ML techniques to analyze public opinion from social media.</p>
+      <div class="card-tags"><span>NLP</span><span>Python</span><span>ML</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/Twitter-Sentiment-Analysis-NLP-" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="nlp">
+      <div class="card-num">02</div>
+      <div class="card-icon"><i class="fas fa-heart"></i></div>
+      <h3 class="card-title">Emotions in Text Prediction</h3>
+      <p class="card-desc">Text-based emotion detection using TF-IDF vectorization and Random Forest classifier to accurately classify emotions from textual data.</p>
+      <div class="card-tags"><span>NLP</span><span>TF-IDF</span><span>Random Forest</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/Emotions-in-Text-Prediction-Project-NLP-" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ml">
+      <div class="card-num">03</div>
+      <div class="card-icon"><i class="fas fa-user-slash"></i></div>
+      <h3 class="card-title">Employee Attrition Prediction</h3>
+      <p class="card-desc">ML model to analyze employee data, predict attrition risk, and identify key factors influencing employee turnover to support HR decision-making.</p>
+      <div class="card-tags"><span>ML</span><span>Classification</span><span>HR Analytics</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/Employee-Attrition-ML-" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ml">
+      <div class="card-num">04</div>
+      <div class="card-icon"><i class="fas fa-credit-card"></i></div>
+      <h3 class="card-title">Credit Risk Analysis</h3>
+      <p class="card-desc">German Credit Risk Analysis project using ML to predict loan default risk, featuring thorough data preprocessing, EDA, and comprehensive model evaluation.</p>
+      <div class="card-tags"><span>ML</span><span>EDA</span><span>Risk</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/Credit-Risk-Analysis-ML-" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ml">
+      <div class="card-num">05</div>
+      <div class="card-icon"><i class="fas fa-shopping-cart"></i></div>
+      <h3 class="card-title">Customer Behavior Prediction</h3>
+      <p class="card-desc">ML pipeline to analyze and predict customer purchase behavior, enabling businesses to personalize marketing and improve conversion rates.</p>
+      <div class="card-tags"><span>ML</span><span>Pandas</span><span>Prediction</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/Customer-Behavior-Prediction-ML-" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="viz">
+      <div class="card-num">06</div>
+      <div class="card-icon"><i class="fas fa-phone-alt"></i></div>
+      <h3 class="card-title">911 Calls Analysis</h3>
+      <p class="card-desc">EDA on 911 call data using Pandas and Seaborn. Visualizes trends in call volume, geographic distribution, and emergency type breakdowns.</p>
+      <div class="card-tags"><span>EDA</span><span>Seaborn</span><span>Pandas</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/911-Call-Analysis" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="ml">
+      <div class="card-num">07</div>
+      <div class="card-icon"><i class="fas fa-store"></i></div>
+      <h3 class="card-title">Ecommerce Purchase Prediction</h3>
+      <p class="card-desc">Predictive model for e-commerce purchase intent using customer behavioral data, feature engineering, and classification algorithms.</p>
+      <div class="card-tags"><span>ML</span><span>Feature Eng.</span><span>E-commerce</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/Ecommerce-Purchase" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+    <div class="project-card" data-category="other">
+      <div class="card-num">08</div>
+      <div class="card-icon"><i class="fas fa-gamepad"></i></div>
+      <h3 class="card-title">Hand Cricket Game</h3>
+      <p class="card-desc">Interactive hand cricket game built with Python and Tkinter, featuring user input for batting/bowling, score tracking, and game logic inspired by the hand-gesture version.</p>
+      <div class="card-tags"><span>Python</span><span>Tkinter</span><span>Game</span></div>
+      <div class="card-links">
+        <a href="https://github.com/Vaishnav17-2004/HAND-CRICKET" target="_blank"><i class="fab fa-github"></i> Code</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills">
+  <div class="section-header">
+    <span class="section-num">03</span>
+    <h2 class="section-title">Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-category">
+      <div class="skill-cat-header"><i class="fas fa-code"></i> Languages</div>
+      <div class="skill-items">
+        <div class="skill-item"><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div><span class="skill-pct">92%</span></div>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><i class="fas fa-table"></i> Data Science</div>
+      <div class="skill-items">
+        <div class="skill-item"><span class="skill-name">Pandas</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div><span class="skill-pct">88%</span></div>
+        <div class="skill-item"><span class="skill-name">NumPy</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div><span class="skill-pct">85%</span></div>
+        <div class="skill-item"><span class="skill-name">Matplotlib/Seaborn</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div><span class="skill-pct">82%</span></div>
+        <div class="skill-item"><span class="skill-name">EDA & Feature Eng.</span><div class="skill-bar"><div class="skill-fill" data-width="84"></div></div><span class="skill-pct">84%</span></div>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><i class="fas fa-robot"></i> Machine Learning</div>
+      <div class="skill-items">
+        <div class="skill-item"><span class="skill-name">Scikit-Learn</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div><span class="skill-pct">80%</span></div>
+        <div class="skill-item"><span class="skill-name">Deep Learning</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div><span class="skill-pct">65%</span></div>
+        <div class="skill-item"><span class="skill-name">NLP</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div><span class="skill-pct">75%</span></div>
+        <div class="skill-item"><span class="skill-name">OpenCV</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div><span class="skill-pct">60%</span></div>
+      </div>
+    </div>
+    <div class="skill-category">
+      <div class="skill-cat-header"><i class="fas fa-tools"></i> Tools</div>
+      <div class="skill-items">
+        <div class="skill-item"><span class="skill-name">Jupyter Notebook</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div><span class="skill-pct">90%</span></div>
+        <div class="skill-item"><span class="skill-name">Microsoft Excel</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div><span class="skill-pct">78%</span></div>
+        <div class="skill-item"><span class="skill-name">Tally Prime</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div><span class="skill-pct">70%</span></div>
+        <div class="skill-item"><span class="skill-name">Git / GitHub</span><div class="skill-bar"><div class="skill-fill" data-width="76"></div></div><span class="skill-pct">76%</span></div>
+      </div>
+    </div>
+  </div>
+  <!-- Tech pills -->
+  <div class="tech-pills">
+    <span>Python</span><span>Pandas</span><span>NumPy</span><span>Scikit-Learn</span>
+    <span>TensorFlow</span><span>OpenCV</span><span>Matplotlib</span><span>Seaborn</span>
+    <span>NLP</span><span>TF-IDF</span><span>Random Forest</span><span>Jupyter</span>
+    <span>Excel</span><span>Tally</span><span>Git</span><span>Deep Learning</span>
+  </div>
+</section>
+
+<!-- ===== BLOG ===== -->
+<section id="blog">
+  <div class="section-header">
+    <span class="section-num">04</span>
+    <h2 class="section-title">Blog</h2>
+    <div class="section-line"></div>
+  </div>
+  <p class="section-sub">Thoughts on data science, AI trends, and project walkthroughs.</p>
+  <div class="blog-grid">
+    <article class="blog-card featured">
+      <div class="blog-label">Featured</div>
+      <div class="blog-date"><i class="far fa-calendar"></i> Coming Soon</div>
+      <h3 class="blog-title">Building a Twitter Sentiment Analyzer: A Complete NLP Walkthrough</h3>
+      <p class="blog-excerpt">A step-by-step guide covering text preprocessing, TF-IDF vectorization, and deploying a sentiment classification model on real Twitter data.</p>
+      <div class="blog-tags"><span>NLP</span><span>Python</span><span>Tutorial</span></div>
+      <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-date"><i class="far fa-calendar"></i> Coming Soon</div>
+      <h3 class="blog-title">Employee Attrition: What the Data Reveals About Why People Quit</h3>
+      <p class="blog-excerpt">Exploring machine learning insights on employee turnover — and what HR teams can do with the predictions.</p>
+      <div class="blog-tags"><span>ML</span><span>HR Analytics</span></div>
+      <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-date"><i class="far fa-calendar"></i> Coming Soon</div>
+      <h3 class="blog-title">From B.Com to Data Science: My Unconventional Journey</h3>
+      <p class="blog-excerpt">How a commerce graduate found their passion in data, algorithms, and the art of turning numbers into narratives.</p>
+      <div class="blog-tags"><span>Career</span><span>Story</span></div>
+      <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+    </article>
+    <article class="blog-card">
+      <div class="blog-date"><i class="far fa-calendar"></i> Coming Soon</div>
+      <h3 class="blog-title">Credit Risk Modeling: Predicting Loan Defaults with Machine Learning</h3>
+      <p class="blog-excerpt">A deep dive into the German Credit dataset — feature engineering, model selection, and evaluation metrics for financial risk.</p>
+      <div class="blog-tags"><span>ML</span><span>Finance</span><span>EDA</span></div>
+      <a href="#" class="blog-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+    </article>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="section-header">
+    <span class="section-num">05</span>
+    <h2 class="section-title">Contact</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-inner">
+    <div class="contact-left">
+      <p class="contact-heading">Let's build something<br><span class="accent">intelligent</span> together.</p>
+      <p class="contact-sub">I'm actively seeking opportunities in Data Science, ML Engineering, and AI Research. Feel free to reach out!</p>
+    </div>
+    <div class="contact-right">
+      <div class="contact-links">
+        <a href="https://github.com/Vaishnav17-2004" target="_blank" class="contact-link">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
+          <div class="contact-info">
+            <span class="contact-platform">GitHub</span>
+            <span class="contact-handle">@Vaishnav17-2004</span>
+          </div>
+          <i class="fas fa-external-link-alt contact-arrow"></i>
+        </a>
+        <a href="https://linkedin.com/in/vaishnav-n" target="_blank" class="contact-link">
+          <div class="contact-icon linkedin"><i class="fab fa-linkedin"></i></div>
+          <div class="contact-info">
+            <span class="contact-platform">LinkedIn</span>
+            <span class="contact-handle">linkedin.vaishnav-n</span>
+          </div>
+          <i class="fas fa-external-link-alt contact-arrow"></i>
+        </a>
+        <a href="mailto:vaishnavvichu216@gmail.com" class="contact-link">
+          <div class="contact-icon email"><i class="fas fa-envelope"></i></div>
+          <div class="contact-info">
+            <span class="contact-platform">Email</span>
+            <span class="contact-handle">vaishnavvichu216@gmail.com</span>
+          </div>
+          <i class="fas fa-external-link-alt contact-arrow"></i>
+        </a>
+        <a href="tel:+919495601128" class="contact-link">
+          <div class="contact-icon phone"><i class="fas fa-phone"></i></div>
+          <div class="contact-info">
+            <span class="contact-platform">Phone</span>
+            <span class="contact-handle">+91 94956-01128</span>
+          </div>
+          <i class="fas fa-external-link-alt contact-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo"><span class="logo-bracket">[</span>VN<span class="logo-bracket">]</span></span>
+    <span class="footer-copy">© 2025 Vaishnav N — Crafted with <span style="color:var(--accent)">♥</span> &amp; Python</span>
+    <div class="footer-socials">
+      <a href="https://github.com/Vaishnav17-2004" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/vaishnav-n" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:vaishnavvichu216@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/particles.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
